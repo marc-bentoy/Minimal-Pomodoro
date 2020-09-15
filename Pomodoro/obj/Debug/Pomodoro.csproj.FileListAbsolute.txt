@@ -1,0 +1,11 @@
+C:\coding\cs\Pomodoro\Pomodoro\bin\Debug\Pomodoro.exe.config
+C:\coding\cs\Pomodoro\Pomodoro\bin\Debug\Pomodoro.exe
+C:\coding\cs\Pomodoro\Pomodoro\bin\Debug\Pomodoro.pdb
+C:\coding\cs\Pomodoro\Pomodoro\obj\Debug\Pomodoro.csprojAssemblyReference.cache
+C:\coding\cs\Pomodoro\Pomodoro\obj\Debug\Pomodoro.Form1.resources
+C:\coding\cs\Pomodoro\Pomodoro\obj\Debug\Pomodoro.Properties.Resources.resources
+C:\coding\cs\Pomodoro\Pomodoro\obj\Debug\Pomodoro.csproj.GenerateResource.cache
+C:\coding\cs\Pomodoro\Pomodoro\obj\Debug\Pomodoro.csproj.CoreCompileInputs.cache
+C:\coding\cs\Pomodoro\Pomodoro\obj\Debug\Pomodoro.csproj.CopyComplete
+C:\coding\cs\Pomodoro\Pomodoro\obj\Debug\Pomodoro.exe
+C:\coding\cs\Pomodoro\Pomodoro\obj\Debug\Pomodoro.pdb
