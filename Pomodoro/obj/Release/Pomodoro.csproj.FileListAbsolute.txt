@@ -10,3 +10,5 @@ C:\coding\cs\Pomodoro\Pomodoro\obj\Release\Pomodoro.csproj.CoreCompileInputs.cac
 C:\coding\cs\Pomodoro\Pomodoro\obj\Release\Pomodoro.csproj.CopyComplete
 C:\coding\cs\Pomodoro\Pomodoro\obj\Release\Pomodoro.exe
 C:\coding\cs\Pomodoro\Pomodoro\obj\Release\Pomodoro.pdb
+C:\coding\cs\Pomodoro\Pomodoro\bin\Release\Sounds\break it.wav
+C:\coding\cs\Pomodoro\Pomodoro\bin\Release\Sounds\lets start.wav

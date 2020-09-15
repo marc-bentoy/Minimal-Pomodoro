@@ -9,3 +9,5 @@ C:\coding\cs\Pomodoro\Pomodoro\obj\Debug\Pomodoro.csproj.CoreCompileInputs.cache
 C:\coding\cs\Pomodoro\Pomodoro\obj\Debug\Pomodoro.csproj.CopyComplete
 C:\coding\cs\Pomodoro\Pomodoro\obj\Debug\Pomodoro.exe
 C:\coding\cs\Pomodoro\Pomodoro\obj\Debug\Pomodoro.pdb
+C:\coding\cs\Pomodoro\Pomodoro\bin\Debug\Sounds\break it.wav
+C:\coding\cs\Pomodoro\Pomodoro\bin\Debug\Sounds\lets start.wav

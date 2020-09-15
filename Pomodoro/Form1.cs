@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Media;
+using System.Reflection;
 using System.Security.AccessControl;
 using System.Text;
 using System.Threading.Tasks;
@@ -38,7 +40,7 @@ namespace Pomodoro
         {
             timer.Start();
             lblTime.ForeColor = Color.FromArgb(1, 255, 236, 209);
-            player.SoundLocation = "C:\\coding\\cs\\Pomodoro\\Pomodoro\\bin\\Debug\\lets start.wav";
+            player.SoundLocation = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"Sounds\lets start.wav");
             player.Play();
         }
 
@@ -112,15 +114,15 @@ namespace Pomodoro
             {
                 if (workTime == true)
                 {
-                    totalTime = 300;
-                    player.SoundLocation = "C:\\coding\\cs\\Pomodoro\\Pomodoro\\bin\\Debug\\break it.wav";
+                    totalTime = 300;                    
+                    player.SoundLocation = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"Sounds\break it.wav");
                     player.Play();
                     workTime = false;
                 }
                 else
                 {
                     totalTime = 1500;
-                    player.SoundLocation = "C:\\coding\\cs\\Pomodoro\\Pomodoro\\bin\\Debug\\lets start.wav";
+                    player.SoundLocation = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"Sounds\lets start.wav");
                     player.Play();
                     lblTime.ForeColor = Color.FromArgb(1, 255, 236, 209);
                     workTime = true;
