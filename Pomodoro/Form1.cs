@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Security.AccessControl;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,6 +17,18 @@ namespace Pomodoro
         int totalTime = 1500;
         bool timerOn = true;
         bool workTime = true;
+        public SoundPlayer player = new SoundPlayer();
+
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                var Params = base.CreateParams;
+                Params.ExStyle |= 0x80;
+                return Params;
+            }
+        }
+
         public Form1()
         {
             InitializeComponent();
@@ -25,6 +38,8 @@ namespace Pomodoro
         {
             timer.Start();
             lblTime.ForeColor = Color.FromArgb(1, 255, 236, 209);
+            player.SoundLocation = "C:\\coding\\cs\\Pomodoro\\Pomodoro\\bin\\Debug\\lets start.wav";
+            player.Play();
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
@@ -33,7 +48,7 @@ namespace Pomodoro
             {
                 Application.Exit();
             }
-            if (e.KeyCode == Keys.S || e.KeyCode == Keys.Up)
+            if (e.KeyCode == Keys.S || e.KeyCode == Keys.Right)
             {
                 if (workTime == true)
                 {
@@ -53,7 +68,7 @@ namespace Pomodoro
                 }
 
             }
-            if (e.KeyCode == Keys.A || e.KeyCode == Keys.Right)
+            if (e.KeyCode == Keys.A || e.KeyCode == Keys.Up)
             {
                 totalTime += 60;
                 int minutes = totalTime / 60;
@@ -61,7 +76,7 @@ namespace Pomodoro
                 lblTime.Text = minutes.ToString() + ":" + seconds.ToString();
             }
             if (e.KeyCode == Keys.Space || e.KeyCode == Keys.Down)
-            {
+            {                
                 if (timerOn == true)
                 {
                     timer.Stop();
@@ -85,8 +100,8 @@ namespace Pomodoro
         }
 
         private void timer_Tick(object sender, EventArgs e)
-        {
-            if(totalTime > 0)
+        {           
+            if (totalTime > 0)
             {
                 totalTime--;
                 int minutes = totalTime / 60;
@@ -98,11 +113,16 @@ namespace Pomodoro
                 if (workTime == true)
                 {
                     totalTime = 300;
+                    player.SoundLocation = "C:\\coding\\cs\\Pomodoro\\Pomodoro\\bin\\Debug\\break it.wav";
+                    player.Play();
                     workTime = false;
                 }
                 else
                 {
                     totalTime = 1500;
+                    player.SoundLocation = "C:\\coding\\cs\\Pomodoro\\Pomodoro\\bin\\Debug\\lets start.wav";
+                    player.Play();
+                    lblTime.ForeColor = Color.FromArgb(1, 255, 236, 209);
                     workTime = true;
                 }
             }

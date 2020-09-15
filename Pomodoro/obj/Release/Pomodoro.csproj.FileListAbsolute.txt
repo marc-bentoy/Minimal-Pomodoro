@@ -1,0 +1,12 @@
+C:\coding\cs\Pomodoro\Pomodoro\bin\Release\Pomodoro.exe.config
+C:\coding\cs\Pomodoro\Pomodoro\bin\Release\Pomodoro.exe
+C:\coding\cs\Pomodoro\Pomodoro\bin\Release\Pomodoro.pdb
+C:\coding\cs\Pomodoro\Pomodoro\bin\Release\Bunifu_UI_v1.5.3.dll
+C:\coding\cs\Pomodoro\Pomodoro\obj\Release\Pomodoro.csprojAssemblyReference.cache
+C:\coding\cs\Pomodoro\Pomodoro\obj\Release\Pomodoro.Form1.resources
+C:\coding\cs\Pomodoro\Pomodoro\obj\Release\Pomodoro.Properties.Resources.resources
+C:\coding\cs\Pomodoro\Pomodoro\obj\Release\Pomodoro.csproj.GenerateResource.cache
+C:\coding\cs\Pomodoro\Pomodoro\obj\Release\Pomodoro.csproj.CoreCompileInputs.cache
+C:\coding\cs\Pomodoro\Pomodoro\obj\Release\Pomodoro.csproj.CopyComplete
+C:\coding\cs\Pomodoro\Pomodoro\obj\Release\Pomodoro.exe
+C:\coding\cs\Pomodoro\Pomodoro\obj\Release\Pomodoro.pdb
