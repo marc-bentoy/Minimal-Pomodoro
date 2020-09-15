@@ -39,9 +39,7 @@ namespace Pomodoro
         private void Form1_Load(object sender, EventArgs e)
         {
             timer.Start();
-            lblTime.ForeColor = Color.FromArgb(1, 255, 236, 209);
-            player.SoundLocation = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"Sounds\lets start.wav");
-            player.Play();
+            lblTime.ForeColor = Color.FromArgb(1, 255, 236, 209);            
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
@@ -102,7 +100,9 @@ namespace Pomodoro
         }
 
         private void timer_Tick(object sender, EventArgs e)
-        {           
+        {
+            player.SoundLocation = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"Sounds\break it.wav");
+
             if (totalTime > 0)
             {
                 totalTime--;
@@ -115,14 +115,12 @@ namespace Pomodoro
                 if (workTime == true)
                 {
                     totalTime = 300;                    
-                    player.SoundLocation = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"Sounds\break it.wav");
                     player.Play();
                     workTime = false;
                 }
                 else
                 {
                     totalTime = 1500;
-                    player.SoundLocation = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"Sounds\lets start.wav");
                     player.Play();
                     lblTime.ForeColor = Color.FromArgb(1, 255, 236, 209);
                     workTime = true;
