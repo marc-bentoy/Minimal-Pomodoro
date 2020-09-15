@@ -90,7 +90,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="iconfinder_website_-_clock_3440828.ico" />
-    <Content Include="Sounds\notify.wav" />
+    <Content Include="Sounds\notify.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

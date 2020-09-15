@@ -101,7 +101,7 @@ namespace Pomodoro
 
         private void timer_Tick(object sender, EventArgs e)
         {
-            player.SoundLocation = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"Sounds\break it.wav");
+            player.SoundLocation = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"Sounds\notify.wav");
 
             if (totalTime > 0)
             {
