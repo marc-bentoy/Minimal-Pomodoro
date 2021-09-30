@@ -1,4 +1,4 @@
-﻿# Minimalist-Pomodoro
+﻿# Minimal-Pomodoro
 ---
 A minimalist pomodoro timer that only takes keypress events. 
 
