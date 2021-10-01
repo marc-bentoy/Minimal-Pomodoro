@@ -7,6 +7,7 @@ A minimal pomodoro timer that only takes keypress events.
 * s or → - switch to either break or work.
 * a or ↑ - adds 60 seconds to the total time.
 * ctrl+w - closes the app.
+* f - minimize
 
 
 ### Installation
