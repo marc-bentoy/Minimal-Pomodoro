@@ -19,6 +19,7 @@ namespace Pomodoro
         int totalTime = 1500;
         bool timerOn = true;
         bool workTime = true;
+        bool isOnTop = true;
         public SoundPlayer player = new SoundPlayer();
 
         protected override CreateParams CreateParams
@@ -97,11 +98,20 @@ namespace Pomodoro
                     timerOn = true;
                 }
             }
+            if (e.KeyCode == Keys.F)
+            {
+                if (isOnTop)
+                {
+                    this.WindowState = FormWindowState.Minimized;
+                    return;
+                }
+                this.WindowState = FormWindowState.Normal;
+            }
         }
 
         private void timer_Tick(object sender, EventArgs e)
         {
-            player.SoundLocation = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"Sounds\notify.wav");
+            player.SoundLocation = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"notify.wav");
 
             if (totalTime > 0)
             {
