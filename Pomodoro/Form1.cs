@@ -64,7 +64,7 @@ namespace Pomodoro
                     lblTime.Text = "25:00";
                     lblTime.ForeColor = Color.FromArgb(1, 255, 236, 209);
                     timer.Start();
-                    totalTime = 1500;                    
+                    totalTime = 2500;                    
                     workTime = true;
                 }
 
@@ -111,7 +111,7 @@ namespace Pomodoro
 
         private void timer_Tick(object sender, EventArgs e)
         {
-            player.SoundLocation = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"notify.wav");
+            player.SoundLocation = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"Sounds/notify.wav");
 
             if (totalTime > 0)
             {
