@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.lblTime = new System.Windows.Forms.Label();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
@@ -72,8 +73,8 @@
             this.ClientSize = new System.Drawing.Size(258, 113);
             this.Controls.Add(this.lblTime);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pomolite";
             this.TopMost = true;

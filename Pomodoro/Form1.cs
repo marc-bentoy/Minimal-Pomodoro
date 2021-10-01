@@ -22,16 +22,6 @@ namespace Pomodoro
         bool isOnTop = true;
         public SoundPlayer player = new SoundPlayer();
 
-        protected override CreateParams CreateParams
-        {
-            get
-            {
-                var Params = base.CreateParams;
-                Params.ExStyle |= 0x80;
-                return Params;
-            }
-        }
-
         public Form1()
         {
             InitializeComponent();
