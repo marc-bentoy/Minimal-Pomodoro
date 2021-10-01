@@ -11,7 +11,6 @@ A minimal pomodoro timer that only takes keypress events.
 
 
 ### Installation
-1. Download the source code.
+1. Download the release on the right side
 2. Unzip
-3. Minimalist-Pomodoro-master -> Pomodoro -> bin -> Release
-4. Run Pomodor.exe
+3. Run Pomodoro.exe
